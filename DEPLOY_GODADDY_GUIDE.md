@@ -49,18 +49,17 @@ Follow the browser login prompt (Sign in with Google/GitHub — Free Hobby plan)
 
 ---
 
-## Step 3 — Connect Your GoDaddy Domain + Free SSL
+## Step 3 — Exact GoDaddy DNS Changes for `jayakesh.in`
 
-1. In **Vercel Dashboard** → **Settings** → **Domains** → Type your GoDaddy domain (e.g. `jayakesh.com`) and click **Add**.
-2. Log in to **[GoDaddy Domain Portfolio](https://dcc.godaddy.com/control/portfolio)** → Click your domain → **DNS** → **DNS Records**.
-3. Update / Add these two DNS records:
+1. In **Vercel Dashboard** → **Settings** → **Domains** → Add **`jayakesh.in`** (Vercel will automatically add `www.jayakesh.in` too).
+2. In your **GoDaddy DNS Records** page (the exact table you shared), only modify **two rows** and keep everything else (`NS`, `SOA`, `_domainconnect`, `_dmarc`) untouched:
 
-| Type | Name | Value | TTL |
-| :--- | :--- | :--- | :--- |
-| **A** | `@` | `76.76.21.21` | 600 seconds (or Default) |
-| **CNAME** | `www` | `cname.vercel-dns.com` | 1 Hour (or Default) |
+| Action in GoDaddy | Type | Name | Old Data | New Data (Value) | TTL |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Delete** `Parked` row, then click **Add New Record** *(if Edit is disabled)* | **A** | `@` | `Parked` | `76.76.21.21` | `600 seconds` |
+| **Click Edit (Pencil icon)** | **CNAME** | `www` | `jayakesh.in.` | `cname.vercel-dns.com` | `1 Hour` |
 
-*(Note: If GoDaddy already has an existing parked `A` record for `@`, edit or delete the parked one so only `76.76.21.21` remains.)*
+*(GoDaddy Note: GoDaddy often disables editing a `Parked` A-record directly — simply click **Delete** on the `a | @ | Parked` row, then click **Add New Record** → Type `A`, Name `@`, Value `76.76.21.21`, Save!)*
 
 4. Within 5–15 minutes, Vercel automatically provisions your free **HTTPS SSL Certificate** and your site + API + `/admin` portal are live 24/7 on `https://yourdomain.com`!
 5. In Vercel → **Settings** → **Environment Variables**, set:
