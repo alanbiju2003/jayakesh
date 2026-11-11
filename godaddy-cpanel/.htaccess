@@ -1,0 +1,38 @@
+Options -Indexes
+RewriteEngine On
+
+# Force HTTPS on live GoDaddy domain
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} !^localhost [NC]
+RewriteCond %{HTTP_HOST} !^127\.0\.0\.1
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Preserve Authorization header for PHP CGI/FastCGI on GoDaddy cPanel
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Clean page URLs
+RewriteRule ^admin/?$ admin.html [L]
+RewriteRule ^invoice/?$ invoice.html [L]
+RewriteRule ^sitemap\.xml$ api/index.php [L,QSA]
+
+# Route all /api/* calls to the PHP backend
+RewriteRule ^api/(.*)$ api/index.php [L,QSA]
+
+# Block direct access to database or hidden files
+<FilesMatch "\.(sqlite|sqlite3|db|log|env)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+# Long-term caching for painted artwork & product photos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+</IfModule>

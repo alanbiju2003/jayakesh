@@ -5,3 +5,4 @@ Full-stack e-commerce storefront, order management backend, automated email & no
 - **Live Domain:** https://jayakesh.in
 - **Admin Portal:** https://jayakesh.in/admin
 - **Setup & DNS Guide:** See [DEPLOY_GODADDY_GUIDE.md](./DEPLOY_GODADDY_GUIDE.md)
+

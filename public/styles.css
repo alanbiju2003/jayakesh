@@ -439,3 +439,4 @@ body.has-topbar .header:not(.solid) { top: 30px; }
   .fphoto::after, .loader .shine, #curtain, #progress { display: none !important; }
   .sw .w > span { transform: none; transition: none; }
 }
+

@@ -47,3 +47,4 @@ for (const t of targets) {
 }
 
 console.log(`Done! Extracted ${count}/${targets.length} assets to ${OUT_DIR}`);
+

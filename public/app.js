@@ -942,7 +942,7 @@ function renderOrderTimelineBlock(order, upi, isSuccessBanner = false) {
           <strong style="color:var(--green-900);font-size:1.05rem">Complete Your UPI Payment (${money(order.total)})</strong>
           ${
             upi && upi.configured
-              ? `<div class="upi-qr-svg">${upi.qrSvg}</div>
+              ? `<div class="upi-qr-svg">${upi.qrSvg || (window.jkQrSvg ? window.jkQrSvg(upi.uri) : "")}</div>
                  <div style="font-size:.86rem;margin-bottom:.6rem">UPI ID: <strong>${esc(upi.upiId)}</strong> <button type="button" class="btn btn-ghost btn-sm" style="padding:.25rem .7rem;min-height:30px;margin-left:.3rem" data-copy="${esc(upi.upiId)}">Copy</button></div>
                  <a class="btn btn-primary btn-sm" href="${esc(upi.uri)}">Open UPI App to Pay ${money(order.total)}</a>`
               : `<p style="font-size:.88rem;color:var(--muted);margin:.5rem 0">Our team has sent payment details to your email, or tap WhatsApp below to pay via UPI.</p>`
@@ -1296,9 +1296,10 @@ async function refreshUpiPreview(amount) {
     const res = await fetch(`/api/upi-qr?amount=${encodeURIComponent(amount)}&note=${encodeURIComponent("Jayakesh Order")}`);
     const data = await res.json();
     if (data.configured) {
+      const svgMarkup = data.qrSvg || (window.jkQrSvg ? window.jkQrSvg(data.uri) : "");
       host.innerHTML = `
         <strong style="color:var(--green-900)">Scan to Pay ${money(amount)}</strong>
-        <div class="upi-qr-svg">${data.qrSvg}</div>
+        <div class="upi-qr-svg">${svgMarkup}</div>
         <div style="font-size:.85rem;margin-bottom:.6rem">UPI ID: <strong>${esc(data.upiId)}</strong></div>
         <a class="btn btn-dark btn-sm" href="${esc(data.uri)}">Open GPay / PhonePe / Paytm</a>
       `;
@@ -1681,3 +1682,4 @@ async function loadStoreData() {
     }
   });
 })();
+
