@@ -42,7 +42,6 @@ Open **GoDaddy → My Products → `jayakesh.in` → DNS → DNS Records**:
 ---
 
 ## Step 3: Activate Instant Order Emails (One-Time Click)
-1. Once **`https://jayakesh.in`** opens, place **1 test order** on the website.
-2. Open **`itmealanbiju@gmail.com`** (check **Inbox** and **Spam/Promotions**) for an email from **FormSubmit**.
-3. Click the **Activate Form** button inside that email once.
-4. Done! Every future website order, contact message, and customer review will automatically email **`itmealanbiju@gmail.com`** (with Printable Invoice & WhatsApp links) and CC the customer!
+1. Open **`ashmitthomas2821@gmail.com`** (check **Inbox** and **Spam/Promotions**) for an email from **FormSubmit**.
+2. Click the **Activate Form** button inside that email once.
+3. Done! Every future website order, contact message, and customer review will automatically email **`ashmitthomas2821@gmail.com`** (with Printable Invoice & WhatsApp links) and CC the customer!

@@ -16,7 +16,7 @@ window.JAYAKESH_CONFIG = {
   // Contact & WhatsApp (digits only with country code for whatsapp)
   whatsapp: "917011083799",
   phone: "+91 70110 83799",
-  supportEmail: "itmealanbiju@gmail.com",
+  supportEmail: "ashmitthomas2821@gmail.com",
   address: "Kerala, India",
   instagram: "", // e.g. "https://www.instagram.com/jayakesh" (leave "" to hide)
   gstNumber: "", // Optional GSTIN to show on printable invoices
@@ -26,8 +26,8 @@ window.JAYAKESH_CONFIG = {
   // sends an instant formatted email to `ownerNotifyEmail` via FormSubmit.co
   // (and CC's the customer's email automatically once activated).
   // NOTE: On the VERY FIRST test order/message from https://jayakesh.in, check
-  // itmealanbiju@gmail.com (and Spam) and click FormSubmit's 1-time "Activate" button.
-  ownerNotifyEmail: "itmealanbiju@gmail.com",
+  // ashmitthomas2821@gmail.com (and Spam) and click FormSubmit's 1-time "Activate" button.
+  ownerNotifyEmail: "ashmitthomas2821@gmail.com",
   ccCustomerOnOrder: true,
   web3formsKey: "", // Optional: paste a free key from https://web3forms.com if preferred over FormSubmit
 
@@ -118,3 +118,4 @@ window.JAYAKESH_CONFIG = {
   // { name: "Anjali M.", city: "Kochi", rating: 5, text: "Amazing traditional scent and texture!", verified: true }
   reviews: []
 };
+

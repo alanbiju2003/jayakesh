@@ -14,8 +14,8 @@
       announcementBar: "",
       whatsapp: "917011083799",
       phone: "+91 70110 83799",
-      supportEmail: "itmealanbiju@gmail.com",
-      ownerNotifyEmail: "itmealanbiju@gmail.com",
+      supportEmail: "ashmitthomas2821@gmail.com",
+      ownerNotifyEmail: "ashmitthomas2821@gmail.com",
       ccCustomerOnOrder: true,
       web3formsKey: "",
       address: "Kerala, India",
@@ -1981,3 +1981,4 @@
     render();
   })();
 })();
+
