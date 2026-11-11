@@ -1,44 +1,48 @@
-# Jayakesh Kerala Hair Oil (`jayakesh.in`) — Direct GoDaddy Deployment Guide
+# Deploy `jayakesh.in` Live 24/7 for ₹0 (Pure Frontend: GitHub Pages + GoDaddy DNS)
 
-Everything (Storefront, Full PHP Backend API, Automatic SQLite/MySQL Database, Order Tracking, Invoices, UPI QR, Customer/Admin Order Emails, and `/admin` Portal) is packaged into a **single GoDaddy-native upload file**:
-
-- **`c:\Users\Acer\Desktop\JAYAKESH\jayakesh-godaddy-cpanel.zip`** *(2.13 MB — Zero Vercel, Zero external servers!)*
+No backend server, no Vercel, and no paid GoDaddy web hosting needed. Follow these 3 quick steps once:
 
 ---
 
-## Important Note About GoDaddy Domains vs. GoDaddy Hosting
-
-In your GoDaddy DNS table, row 1 currently shows:
-`a | @ | Parked`
-
-Why it says **`Parked`**: Buying the domain `jayakesh.in` on GoDaddy only registers the domain name — GoDaddy does **not** include free web server hosting automatically with a domain purchase.
-
-You have **two ways** to host this `jayakesh-godaddy-cpanel.zip` package (neither uses Vercel!):
+## Step 1: Turn On Free GitHub Pages (30 Seconds)
+1. Open your GitHub repository: **https://github.com/alanbiju2003/jayakesh/settings/pages**
+2. Under **Build and deployment → Source**, keep **Deploy from a branch**.
+3. Under **Branch**, select **`main`** and folder **`/ (root)`**, then click **Save**.
+4. *(Note: The `CNAME` file in this repo already sets your custom domain to `jayakesh.in` automatically!)*
 
 ---
 
-## Option 1 — Deploy 100% Inside GoDaddy Only (GoDaddy Web Hosting / cPanel)
+## Step 2: Update GoDaddy DNS Records for `jayakesh.in` (2 Minutes)
+Open **GoDaddy → My Products → `jayakesh.in` → DNS → DNS Records**:
 
-*(Use this if you have or activate GoDaddy Linux Web Hosting / cPanel on your GoDaddy account)*
+1. **Delete the Parked `A` record**:
+   - Find the row `a | @ | Parked | 600 seconds` → click **Delete** (if GoDaddy doesn't show Delete on `Parked`, go to the **Forwarding** tab, turn off forwarding/parking, or just add the 4 `A` records below and GoDaddy will replace `Parked`).
 
-1. Log in to **[GoDaddy My Products](https://account.godaddy.com/products)**.
-2. Under **Web Hosting**, click **Manage** next to your hosting plan → Click **cPanel Admin**. *(When you assign `jayakesh.in` as the hosting domain in GoDaddy, GoDaddy automatically replaces `Parked` with your GoDaddy server IP and issues SSL!)*
-3. In cPanel, open **File Manager** → Click **`public_html`** on the left.
-4. Click **Upload** (top bar) → Select **`c:\Users\Acer\Desktop\JAYAKESH\jayakesh-godaddy-cpanel.zip`**.
-5. Go back to `public_html`, right-click **`jayakesh-godaddy-cpanel.zip`** → Click **Extract** → Extract to `/public_html` → Delete the `.zip` file afterward.
-6. *(Optional — Free `@jayakesh.in` Sending)*: In GoDaddy cPanel → **Email Accounts** → Create `orders@jayakesh.in`. GoDaddy's native PHP `mail()` will immediately send Order Confirmation & Admin Alert emails from `orders@jayakesh.in` with zero external keys!
-7. Open **`https://jayakesh.in`** and **`https://jayakesh.in/admin`**:
-   - **Login Email:** `admin@jayakesh.in`
-   - **Default Password:** `Jayakesh@Admin2026` *(change immediately in Settings!)*
+2. **Add these 4 `A` records** (Click **Add New Record** 4 times):
+
+   | Type | Name | Value / Data | TTL |
+   | :--- | :--- | :--- | :--- |
+   | **A** | `@` | `185.199.108.153` | 1 Hour (or 600s) |
+   | **A** | `@` | `185.199.109.153` | 1 Hour (or 600s) |
+   | **A** | `@` | `185.199.110.153` | 1 Hour (or 600s) |
+   | **A** | `@` | `185.199.111.153` | 1 Hour (or 600s) |
+
+3. **Edit the `www` CNAME record**:
+   - Find `cname | www | jayakesh.in.` → click **Edit** → change **Value / Data** to:
+     ```
+     alanbiju2003.github.io
+     ```
+   - Click **Save**.
+
+4. **Leave all other rows untouched** (`ns37`/`ns38.domaincontrol.com.`, `soa`, `_domainconnect`, `_dmarc`).
+
+5. **Enable Free SSL (`https://jayakesh.in`)**:
+   - Wait 5–15 minutes for GoDaddy DNS to propagate, then refresh **https://github.com/alanbiju2003/jayakesh/settings/pages** and tick ✅ **Enforce HTTPS**.
 
 ---
 
-## Option 2 — If You Want ₹0/Month FREE Hosting (No GoDaddy Hosting Fee & No Vercel)
-
-Because `jayakesh-godaddy-cpanel.zip` uses standard **Apache `.htaccess` + PHP + SQLite/MySQL**, you can upload the **exact same `jayakesh-godaddy-cpanel.zip`** for **₹0/month free** on **InfinityFree** or **Cloudflare**:
-
-1. Create a free account at **[InfinityFree.com](https://www.infinityfree.com)** (Free PHP 8 + MySQL cPanel hosting, ₹0/month, commercial sites allowed).
-2. Click **Create Account** → **Custom Domain** → Enter **`jayakesh.in`**.
-3. In GoDaddy → Domain **`jayakesh.in`** → **DNS → Nameservers → Change**, enter the 2 InfinityFree nameservers (`ns1.infinityfree.com` & `ns2.infinityfree.com`), then activate **Free SSL Certificate** inside InfinityFree.
-4. Open InfinityFree **File Manager** → open **`htdocs`** → Upload & Extract **`jayakesh-godaddy-cpanel.zip`**.
-5. Open **`https://jayakesh.in/admin`** → **Store & Mail Setup** → Enter `itmealanbiju@gmail.com` + your 16-character [Google App Password](https://myaccount.google.com/apppasswords) (or free [Resend.com](https://resend.com) API key) for automated emails!
+## Step 3: Activate Instant Order Emails (One-Time Click)
+1. Once **`https://jayakesh.in`** opens, place **1 test order** on the website.
+2. Open **`itmealanbiju@gmail.com`** (check **Inbox** and **Spam/Promotions**) for an email from **FormSubmit**.
+3. Click the **Activate Form** button inside that email once.
+4. Done! Every future website order, contact message, and customer review will automatically email **`itmealanbiju@gmail.com`** (with Printable Invoice & WhatsApp links) and CC the customer!
