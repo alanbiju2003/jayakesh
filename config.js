@@ -10,9 +10,6 @@ window.JAYAKESH_CONFIG = {
   tagline: "Legacy in every drop",
   domain: "https://jayakesh.in",
 
-  // Top announcement bar (leave "" to hide)
-  announcementBar: "Handmade Kerala Herbal Hair Oil · Free Pan-India Delivery on Orders ₹499+",
-
   // Contact & WhatsApp (digits only with country code for whatsapp)
   whatsapp: "917011083799",
   phone: "+91 70110 83799",
@@ -25,8 +22,6 @@ window.JAYAKESH_CONFIG = {
   // Every new website order, contact message, or customer review submission
   // sends an instant formatted email to `ownerNotifyEmail` via FormSubmit.co
   // (and CC's the customer's email automatically once activated).
-  // NOTE: On the VERY FIRST test order/message from https://jayakesh.in, check
-  // ashmitthomas2821@gmail.com (and Spam) and click FormSubmit's 1-time "Activate" button.
   ownerNotifyEmail: "ashmitthomas2821@gmail.com",
   ccCustomerOnOrder: true,
   web3formsKey: "", // Optional: paste a free key from https://web3forms.com if preferred over FormSubmit
@@ -58,7 +53,7 @@ window.JAYAKESH_CONFIG = {
       comparePrice: 499, // MRP / strike-through price (set null or 0 to hide)
       inStock: true,
       image: "assets/bottle.png",
-      desc: "Jayakesh Kerala Hair Oil is a handmade herbal hair oil, made in the Kerala tradition with pure herbal ingredients and no harmful chemicals.",
+      desc: "Jayakesh Kerala Hair Oil is a handmade hair oil crafted in the Kerala tradition with pure natural ingredients and ZERO chemicals.",
       benefits: [
         "Helps reduce hair fall",
         "Promotes healthy hair growth",
@@ -67,8 +62,8 @@ window.JAYAKESH_CONFIG = {
       ],
       highlights: [
         "Handmade",
-        "No harmful chemicals",
-        "Pure herbal ingredients"
+        "ZERO chemicals",
+        "Pure natural ingredients"
       ]
     }
   ],
@@ -91,23 +86,32 @@ window.JAYAKESH_CONFIG = {
     }
   },
 
-  // Co-Founders (About Page)
+  // Leadership — Founder & Co-Founders (About Page)
   founders: [
     {
-      name: "Jaya",
-      initials: "J",
-      role: "Co-Founder",
-      photo: "founders/jaya.jpg",
-      intro: "Jaya is a co-founder of Jayakesh, the Kerala hair oil that is handmade with pure herbal ingredients and no harmful chemicals.",
+      name: "Ashmit Thomas",
+      initials: "AT",
+      role: "Founder",
+      photo: "founders/ashmit.jpg",
+      intro: "Ashmit Thomas is the Founder of Jayakesh, leading the vision to bring authentic handmade Kerala hair oil crafted with pure natural ingredients and ZERO chemicals to every home.",
       story: [],
       quote: ""
     },
     {
-      name: "Ashmit Thomas",
+      name: "Jaya Shaji",
+      initials: "JS",
+      role: "Co-Founder",
+      photo: "founders/jaya.jpg",
+      intro: "Jaya Shaji is the Co-Founder of Jayakesh, rooted in Kerala's traditional handmade hair-oil craft with pure natural ingredients and ZERO chemicals.",
+      story: [],
+      quote: ""
+    },
+    {
+      name: "Ashmi Thomas",
       initials: "AT",
       role: "Co-Founder",
-      photo: "founders/ashmit.jpg",
-      intro: "Ashmit Thomas is the other co-founder of Jayakesh, building the brand together with Jaya.",
+      photo: "founders/ashmi.jpg",
+      intro: "Ashmi Thomas is the Co-Founder of Jayakesh, building and growing the brand together with Ashmit Thomas and Jaya Shaji.",
       story: [],
       quote: ""
     }
@@ -118,4 +122,3 @@ window.JAYAKESH_CONFIG = {
   // { name: "Anjali M.", city: "Kochi", rating: 5, text: "Amazing traditional scent and texture!", verified: true }
   reviews: []
 };
-
