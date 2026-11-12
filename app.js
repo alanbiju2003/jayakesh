@@ -1899,17 +1899,46 @@
       tb.classList.remove("hidden");
     }
 
-    // Intro loader animation
+    // Intro loader animation (waits for PNG load + decode before starting timeline)
     const L = $("#loader");
     if (L) {
       const leaf = $(".leaf", L);
       const rest = $(".rest", L);
       const sh = $(".shine", L);
       if (sh) sh.style.webkitMaskImage = sh.style.maskImage = `url("${LOGO_REST}")`;
-      Promise.all([leaf, rest].map((i) => (i && i.decode ? i.decode().catch(() => {}) : 0))).then(() =>
-        L.classList.add("go")
-      );
-      setTimeout(() => L.classList.add("gone"), 4600);
+
+      const waitImg = (img) =>
+        new Promise((resolve) => {
+          if (!img) return resolve();
+          const finish = () => {
+            if (img.decode) img.decode().catch(() => {}).finally(resolve);
+            else resolve();
+          };
+          if (img.complete && img.naturalWidth > 0) finish();
+          else {
+            img.addEventListener("load", finish, { once: true });
+            img.addEventListener("error", resolve, { once: true });
+          }
+        });
+
+      let started = false;
+      const startIntro = () => {
+        if (started) return;
+        started = true;
+        requestAnimationFrame(() => {
+          void L.offsetWidth;
+          L.classList.add("go");
+          setTimeout(() => L.classList.add("gone"), 4200);
+        });
+      };
+
+      Promise.race([
+        Promise.all([waitImg(leaf), waitImg(rest)]),
+        new Promise((r) => setTimeout(r, 2500))
+      ]).then(startIntro);
+
+      // Ultimate safety net if browser tab was backgrounded
+      setTimeout(() => L.classList.add("gone"), 7500);
     }
 
     $("#yr").textContent = new Date().getFullYear();

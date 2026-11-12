@@ -147,8 +147,10 @@ body.has-topbar .header:not(.solid) { top: 30px; }
 /* Intro Loader & Curtain */
 .loader {
   position: fixed; inset: 0; z-index: 100;
-  background: var(--paint-green) center / cover; color: #fff;
+  background: var(--green-950) var(--paint-green) center / cover; color: #fff;
   display: grid; place-items: center;
+}
+.loader.go {
   animation: loadout .9s cubic-bezier(.76,0,.24,1) 3.1s forwards;
 }
 .loader.gone { display: none !important; }
@@ -156,26 +158,27 @@ body.has-topbar .header:not(.solid) { top: 30px; }
 .loader > div { position: relative; }
 .loader .lg { position: relative; width: min(560px, 78vw); aspect-ratio: 1400 / 323; margin: 0 auto; opacity: 0; }
 .loader .lg img { position: absolute; inset: 0; width: 100%; height: 100%; }
-.loader .rest { clip-path: inset(0 100% 0 0); }
-.loader .leaf { opacity: 0; transform-origin: 5.5% 56%; }
+.loader .rest { -webkit-clip-path: inset(0 100% 0 0); clip-path: inset(0 100% 0 0); will-change: clip-path; }
+.loader .leaf { opacity: 0; transform-origin: 5.5% 56%; will-change: transform, opacity; }
 .loader .shine { position: absolute; inset: 0; background: linear-gradient(105deg, transparent 38%, rgba(255,255,255,.9) 50%, transparent 62%) 160% 0 / 260% 100% no-repeat; -webkit-mask-size: 100% 100%; mask-size: 100% 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; opacity: 0; }
 .loader .ltag { font-family: var(--serif); font-style: italic; font-size: clamp(1.2rem, 3.6vw, 1.7rem); color: #fff; text-shadow: 0 2px 14px rgba(6,33,13,.7); margin: 1.5rem 0 0; opacity: 0; }
-.loader .bar { width: 140px; height: 2px; background: rgba(255,255,255,.35); margin: 1.2rem auto 0; overflow: hidden; opacity: 0; }
-.loader .bar i { display: block; height: 100%; background: #fff; transform-origin: left; animation: fill 2.9s ease-in-out both; }
-.loader.go .lg, .loader.go .bar { opacity: 1; }
+.loader .bar { width: 140px; height: 2px; background: rgba(255,255,255,.35); margin: 1.2rem auto 0; overflow: hidden; opacity: 1; }
+.loader .bar i { display: block; height: 100%; background: #fff; transform: scaleX(0); transform-origin: left; }
+.loader.go .lg { opacity: 1; }
+.loader.go .bar i { animation: fill 2.9s ease-in-out forwards; }
 .loader.go .leaf { animation: leafin 1.5s .08s cubic-bezier(.22,1,.36,1) forwards; }
 .loader.go .rest { animation: wipe .95s 1.25s cubic-bezier(.65,0,.35,1) forwards; }
 .loader.go .shine { animation: shine .85s 2.1s ease-in-out forwards; }
 .loader.go .ltag { animation: fadeup .75s 1.95s ease forwards; }
-@keyframes loadout { to { clip-path: inset(0 0 100% 0); visibility: hidden; } }
-@keyframes fill { from { transform: scaleX(0); } }
+@keyframes loadout { to { -webkit-clip-path: inset(0 0 100% 0); clip-path: inset(0 0 100% 0); visibility: hidden; } }
+@keyframes fill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 @keyframes leafin {
   0%   { opacity: 0; transform: translate(44.5%, -6%) scale(1.5) rotate(-70deg); filter: drop-shadow(0 0 0 rgba(143,226,79,0)); }
   28%  { opacity: 1; transform: translate(44.5%, -6%) scale(5.5) rotate(-14deg); filter: drop-shadow(0 0 16px rgba(143,226,79,.6)); }
   55%  { opacity: 1; transform: translate(44.5%, -6%) scale(5.5) rotate(-6deg); filter: drop-shadow(0 0 22px rgba(143,226,79,.7)); }
   100% { opacity: 1; transform: none; filter: drop-shadow(0 0 0 rgba(143,226,79,0)); }
 }
-@keyframes wipe { to { clip-path: inset(0 0 0 0); } }
+@keyframes wipe { to { -webkit-clip-path: inset(0 0 0 0); clip-path: inset(0 0 0 0); } }
 @keyframes shine { 0% { opacity: 1; background-position: 160% 0; } 100% { opacity: 1; background-position: -60% 0; } }
 @keyframes fadeup { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 
@@ -433,10 +436,11 @@ body.has-topbar .header:not(.solid) { top: 30px; }
 .pcard.tilt:hover { transform: perspective(900px) translateY(-8px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  main *, main *::before, main *::after,
+  .header *, .footer * { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
   .reveal { opacity: 1; transform: none; }
   .float, .marquee .track, .fphoto img, .hero-bg i, .stage .halo, .showcase .pic img { animation: none; }
-  .fphoto::after, .loader .shine, #curtain, #progress { display: none !important; }
+  .fphoto::after, #curtain, #progress { display: none !important; }
   .sw .w > span { transform: none; transition: none; }
 }
 
