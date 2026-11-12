@@ -42,7 +42,14 @@
   const LOGO_REST = "assets/logo-rest.png";
   const ASSETS = {
     coconut: "assets/coconut.jpg",
-    hibiscus: "assets/hibiscus.jpg"
+    onion: "assets/onion.jpg",
+    hibiscus: "assets/hibiscus.jpg",
+    kalonji: "assets/kalonji.jpg",
+    methi: "assets/methi.jpg",
+    tulsi: "assets/tulsi.jpg",
+    aloe: "assets/aloe.jpg",
+    pepper: "assets/pepper.jpg",
+    tea: "assets/tea.jpg"
   };
 
   const DEFAULT_PRODUCT = {
@@ -123,6 +130,7 @@
     {
       name: "Onion",
       sub: "Red Onion",
+      img: "@onion",
       art: "onion",
       tint: ["#263614", "#09200e"],
       benefits: [
@@ -144,6 +152,7 @@
     {
       name: "Kalonji",
       sub: "Black Seed",
+      img: "@kalonji",
       art: "kalonji",
       tint: ["#12381b", "#061b0b"],
       benefits: [
@@ -155,6 +164,7 @@
     {
       name: "Methi",
       sub: "Fenugreek Seeds",
+      img: "@methi",
       art: "methi",
       tint: ["#2c3510", "#0a210e"],
       benefits: [
@@ -166,6 +176,7 @@
     {
       name: "Tulsi",
       sub: "Holy Basil",
+      img: "@tulsi",
       art: "tulsi",
       tint: ["#15421f", "#071e0d"],
       benefits: [
@@ -176,6 +187,7 @@
     },
     {
       name: "Aloe Vera",
+      img: "@aloe",
       art: "aloe",
       tint: ["#134422", "#061d0c"],
       benefits: [
@@ -187,6 +199,7 @@
     {
       name: "Kali Mirch",
       sub: "Black Pepper",
+      img: "@pepper",
       art: "pepper",
       tint: ["#243313", "#081f0d"],
       benefits: [
@@ -197,6 +210,7 @@
     },
     {
       name: "Tea Leaves",
+      img: "@tea",
       art: "tea",
       tint: ["#1b3f19", "#071d0c"],
       benefits: [
