@@ -1385,7 +1385,7 @@
   }
 
   const titles = {
-    home: "Jayakesh Kerala Hair Oil | Handmade Traditional Kerala Hair Oil (200 ml)",
+    home: "Jayakesh Hair Oil | Jayakesh Kerala Hair Oil — Official Store (200 ml)",
     shop: "Buy Jayakesh Kerala Hair Oil Online (₹399) | Official Store",
     product: "Jayakesh Kerala Hair Oil 200 ml — 9 Pure Natural Ingredients & ZERO Chemicals",
     ingredients: "Explore the 9 Natural Ingredients in Jayakesh Kerala Hair Oil | Coconut, Onion, Hibiscus & More",
