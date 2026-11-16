@@ -1385,21 +1385,56 @@
   }
 
   const titles = {
-    home: "Jayakesh Kerala Hair Oil | Handmade Kerala Hair Oil",
-    shop: "Shop Kerala Hair Oil | Jayakesh",
-    product: "Jayakesh Kerala Hair Oil 200 ml | Jayakesh",
-    ingredients: "Explore the Ingredients | Jayakesh",
-    about: "About Us & Founders | Jayakesh",
-    contact: "Contact Us | Jayakesh",
-    cart: "Shopping Cart | Jayakesh",
-    checkout: "Secure Checkout | Jayakesh",
-    "order-success": "Order Confirmed | Jayakesh",
-    orders: "My Orders & Invoices | Jayakesh",
-    privacy: "Privacy Policy | Jayakesh",
-    terms: "Terms & Conditions | Jayakesh",
-    shipping: "Shipping & Returns | Jayakesh",
-    notfound: "Page Not Found | Jayakesh"
+    home: "Jayakesh Kerala Hair Oil | Handmade Traditional Kerala Hair Oil (200 ml)",
+    shop: "Buy Jayakesh Kerala Hair Oil Online (₹399) | Official Store",
+    product: "Jayakesh Kerala Hair Oil 200 ml — 9 Pure Natural Ingredients & ZERO Chemicals",
+    ingredients: "Explore the 9 Natural Ingredients in Jayakesh Kerala Hair Oil | Coconut, Onion, Hibiscus & More",
+    about: "About Jayakesh & Our Founders — Ashmit Thomas, Jaya Shaji & Ashmi Thomas",
+    contact: "Contact Jayakesh Kerala Hair Oil | WhatsApp & Customer Support",
+    cart: "Shopping Cart | Jayakesh Kerala Hair Oil",
+    checkout: "Secure Checkout — COD & UPI | Jayakesh Kerala Hair Oil",
+    "order-success": "Order Confirmed | Jayakesh Kerala Hair Oil",
+    orders: "My Orders & Invoices | Jayakesh Kerala Hair Oil",
+    privacy: "Privacy Policy | Jayakesh Kerala Hair Oil",
+    terms: "Terms & Conditions | Jayakesh Kerala Hair Oil",
+    shipping: "Pan-India Shipping & Returns Policy | Jayakesh Kerala Hair Oil",
+    notfound: "Page Not Found | Jayakesh Kerala Hair Oil"
   };
+
+  const descriptions = {
+    home: "Buy Jayakesh Kerala Hair Oil (200 ml) online at ₹399 — authentic handmade Kerala hair oil crafted with 9 pure natural ingredients (Coconut Oil, Red Onion, Hibiscus, Kalonji, Methi, Tulsi, Aloe Vera, Kali Mirch & Tea Leaves) and ZERO chemicals. Pan-India COD & UPI delivery.",
+    shop: "Shop authentic Jayakesh Kerala Hair Oil (200 ml) at ₹399 (MRP ₹499). Handmade in Kerala with 9 pure natural ingredients and ZERO chemicals. Free shipping on orders ₹499+.",
+    product: "Jayakesh Kerala Hair Oil (200 ml) — handmade in Kerala with Coconut Oil, Onion, Hibiscus, Kalonji, Methi, Tulsi, Aloe Vera, Kali Mirch, and Tea Leaves. ZERO chemicals. Helps reduce hair fall and nourish the scalp.",
+    ingredients: "Explore all 9 pure natural ingredients in Jayakesh Kerala Hair Oil: Coconut Oil, Red Onion, Hibiscus, Kalonji (Black Seed), Methi (Fenugreek Seeds), Tulsi (Holy Basil), Aloe Vera, Kali Mirch (Black Pepper), and Tea Leaves.",
+    about: "Discover the Kerala hair-care heritage of Jayakesh Kerala Hair Oil and meet Founder Ashmit Thomas along with Co-Founders Jaya Shaji and Ashmi Thomas.",
+    contact: "Reach Jayakesh Kerala Hair Oil customer support via WhatsApp (+91 70110 83799) or email (ashmitthomas2821@gmail.com) for order assistance, tracking, and inquiries.",
+    privacy: "Read the Jayakesh Kerala Hair Oil Privacy Policy covering order privacy, local browser storage, and secure customer communications.",
+    terms: "Read the Terms & Conditions for shopping at Jayakesh Kerala Hair Oil (jayakesh.in).",
+    shipping: "Pan-India delivery details for Jayakesh Kerala Hair Oil: ₹49 standard shipping, FREE shipping on orders ₹499+, 24–48 hour dispatch, and 48-hour transit damage replacement."
+  };
+
+  const noindexRoutes = new Set(["cart", "checkout", "order-success", "orders", "notfound"]);
+
+  function updateRouteSeo(name) {
+    const title = titles[name] || CFG.storeName;
+    const desc = descriptions[name] || descriptions.home;
+    document.title = title;
+    const setMeta = (sel, val) => {
+      const el = document.querySelector(sel);
+      if (el && val) el.setAttribute("content", val);
+    };
+    setMeta('meta[name="description"]', desc);
+    setMeta('meta[property="og:title"]', title);
+    setMeta('meta[property="og:description"]', desc);
+    setMeta('meta[name="twitter:title"]', title);
+    setMeta('meta[name="twitter:description"]', desc);
+    setMeta(
+      'meta[name="robots"]',
+      noindexRoutes.has(name)
+        ? "noindex, follow"
+        : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    );
+  }
 
   /* ---------- Router ---------- */
   function route() {
@@ -1420,7 +1455,7 @@
 
     const app = $("#app");
     app.innerHTML = `<div class="view">${views[name]()}</div>`;
-    document.title = titles[name] || CFG.storeName;
+    updateRouteSeo(name);
 
     $$("#nav a").forEach((a) => {
       const target = "#/" + (name === "home" ? "" : name);

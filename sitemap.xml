@@ -1,14 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://jayakesh.in/</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://jayakesh.in/assets/bottle.png</image:loc>
+      <image:title>Jayakesh Kerala Hair Oil (200 ml) — Handmade Bottle</image:title>
+      <image:caption>Jayakesh Kerala Hair Oil 200 ml handmade in Kerala with 9 pure natural ingredients and ZERO chemicals.</image:caption>
+      <image:geo_location>Kerala, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://jayakesh.in/assets/logo-rest.png</image:loc>
+      <image:title>Jayakesh Kerala Hair Oil Official Brand Logo</image:title>
+      <image:caption>Jayakesh — Legacy in every drop.</image:caption>
+      <image:geo_location>Kerala, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://jayakesh.in/assets/coconut.jpg</image:loc>
+      <image:title>Coconut Oil — Jayakesh Kerala Hair Oil Ingredient</image:title>
+      <image:caption>Pure Coconut Oil nourishes and conditions hair deeply while helping reduce protein loss and breakage.</image:caption>
+      <image:geo_location>Kerala, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://jayakesh.in/assets/onion.jpg</image:loc>
+      <image:title>Onion (Red Onion) — Jayakesh Kerala Hair Oil Ingredient</image:title>
+      <image:caption>Red Onion (Kerala shallots) rich in natural sulphur compounds and antioxidants to nourish hair follicles and invigorate the scalp.</image:caption>
+      <image:geo_location>Kerala, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://jayakesh.in/assets/hibiscus.jpg</image:loc>
+      <image:title>Hibiscus — Jayakesh Kerala Hair Oil Ingredient</image:title>
+      <image:caption>Hibiscus flower traditionally used in Kerala to condition hair, improve manageability, and support lustrous hair.</image:caption>
+      <image:geo_location>Kerala, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://jayakesh.in/assets/kalonji.jpg</image:loc>
+      <image:title>Kalonji (Black Seed) — Jayakesh Kerala Hair Oil Ingredient</image:title>
+      <image:caption>Kalonji (Black Seed) provides natural antioxidant protection, essential fatty acids, and scalp nourishment.</image:caption>
+      <image:geo_location>Kerala, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://jayakesh.in/assets/methi.jpg</image:loc>
+      <image:title>Methi (Fenugreek Seeds) — Jayakesh Kerala Hair Oil Ingredient</image:title>
+      <image:caption>Methi (Fenugreek Seeds) helps condition hair, improve natural shine, and support scalp and root strength.</image:caption>
+      <image:geo_location>Kerala, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://jayakesh.in/assets/tulsi.jpg</image:loc>
+      <image:title>Tulsi (Holy Basil) — Jayakesh Kerala Hair Oil Ingredient</image:title>
+      <image:caption>Tulsi (Holy Basil) contains natural purifying compounds and antioxidants to help maintain a clean, healthy scalp.</image:caption>
+      <image:geo_location>Kerala, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://jayakesh.in/assets/aloe.jpg</image:loc>
+      <image:title>Aloe Vera — Jayakesh Kerala Hair Oil Ingredient</image:title>
+      <image:caption>Aloe Vera helps moisturise and condition hair while soothing and hydrating the scalp.</image:caption>
+      <image:geo_location>Kerala, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://jayakesh.in/assets/pepper.jpg</image:loc>
+      <image:title>Kali Mirch (Black Pepper) — Jayakesh Kerala Hair Oil Ingredient</image:title>
+      <image:caption>Kali Mirch (Black Pepper) provides natural antioxidants and plant phytochemicals traditionally used to stimulate and warm the scalp.</image:caption>
+      <image:geo_location>Kerala, India</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://jayakesh.in/assets/tea.jpg</image:loc>
+      <image:title>Tea Leaves — Jayakesh Kerala Hair Oil Ingredient</image:title>
+      <image:caption>Tea Leaves rich in natural polyphenols, catechins, and caffeine to help protect hair and scalp against oxidative stress.</image:caption>
+      <image:geo_location>Kerala, India</image:geo_location>
+    </image:image>
   </url>
   <url>
-    <loc>https://jayakesh.in/invoice.html</loc>
+    <loc>https://jayakesh.in/llms.txt</loc>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jayakesh.in/llms-full.txt</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
-

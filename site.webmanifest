@@ -1,0 +1,26 @@
+{
+  "name": "Jayakesh Kerala Hair Oil",
+  "short_name": "Jayakesh",
+  "description": "Handmade traditional Kerala hair oil crafted with 9 pure natural ingredients and ZERO chemicals. Legacy in every drop.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#05180a",
+  "theme_color": "#05180a",
+  "lang": "en-IN",
+  "categories": ["shopping", "lifestyle", "beauty"],
+  "icons": [
+    {
+      "src": "assets/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

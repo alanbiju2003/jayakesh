@@ -1,0 +1,14 @@
+/* TEAM */
+Founder: Ashmit Thomas
+Co-Founder: Jaya Shaji
+Co-Founder: Ashmi Thomas
+Brand: Jayakesh Kerala Hair Oil
+Contact: ashmitthomas2821@gmail.com
+WhatsApp: +91 70110 83799
+Location: Kerala, India
+
+/* SITE */
+Domain: https://jayakesh.in
+Language: English (India)
+Standards: HTML5, CSS3, ES6+, Schema.org JSON-LD, llms.txt (GEO/AEO)
+Craft: Handmade in Kerala · Pure natural ingredients · ZERO chemicals
