@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Jayakesh Kerala Hair Oil — Official Product Feed</title>
+    <link>https://jayakesh.in/</link>
+    <description>Official Google Merchant &amp; AI Shopping product feed for Jayakesh Kerala Hair Oil.</description>
+    <item>
+      <g:id>jk-200</g:id>
+      <g:title>Jayakesh Kerala Hair Oil (200 ml) — Handmade Traditional Kerala Hair Oil, ZERO Chemicals</g:title>
+      <g:description>Authentic 200 ml handmade Kerala hair oil crafted in small batches with 9 pure natural ingredients — Coconut Oil, Onion (Red Onion), Hibiscus, Kalonji (Black Seed), Methi (Fenugreek Seeds), Tulsi (Holy Basil), Aloe Vera, Kali Mirch (Black Pepper), and Tea Leaves — with ZERO chemicals. Helps reduce hair fall, promote healthy hair growth, nourish the scalp, and strengthen hair.</g:description>
+      <g:link>https://jayakesh.in/</g:link>
+      <g:image_link>https://jayakesh.in/assets/bottle.png</g:image_link>
+      <g:additional_image_link>https://jayakesh.in/assets/coconut.jpg</g:additional_image_link>
+      <g:additional_image_link>https://jayakesh.in/assets/onion.jpg</g:additional_image_link>
+      <g:additional_image_link>https://jayakesh.in/assets/hibiscus.jpg</g:additional_image_link>
+      <g:additional_image_link>https://jayakesh.in/assets/kalonji.jpg</g:additional_image_link>
+      <g:additional_image_link>https://jayakesh.in/assets/methi.jpg</g:additional_image_link>
+      <g:additional_image_link>https://jayakesh.in/assets/tulsi.jpg</g:additional_image_link>
+      <g:additional_image_link>https://jayakesh.in/assets/aloe.jpg</g:additional_image_link>
+      <g:additional_image_link>https://jayakesh.in/assets/pepper.jpg</g:additional_image_link>
+      <g:additional_image_link>https://jayakesh.in/assets/tea.jpg</g:additional_image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>499.00 INR</g:price>
+      <g:sale_price>399.00 INR</g:sale_price>
+      <g:brand>Jayakesh</g:brand>
+      <g:mpn>JK-KHO-200ML</g:mpn>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>Health &amp; Beauty &gt; Personal Care &gt; Hair Care &gt; Hair Oils</g:google_product_category>
+      <g:product_type>Hair Care &gt; Traditional Kerala Hair Oil</g:product_type>
+      <g:unit_pricing_measure>200 ml</g:unit_pricing_measure>
+      <g:unit_pricing_base_measure>100 ml</g:unit_pricing_base_measure>
+      <g:gender>unisex</g:gender>
+      <g:age_group>adult</g:age_group>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Pan-India Delivery</g:service>
+        <g:price>49.00 INR</g:price>
+        <g:min_handling_time>1</g:min_handling_time>
+        <g:max_handling_time>2</g:max_handling_time>
+        <g:min_transit_time>3</g:min_transit_time>
+        <g:max_transit_time>8</g:max_transit_time>
+      </g:shipping>
+    </item>
+  </channel>
+</rss>

@@ -12,3 +12,4 @@ Domain: https://jayakesh.in
 Language: English (India)
 Standards: HTML5, CSS3, ES6+, Schema.org JSON-LD, llms.txt (GEO/AEO)
 Craft: Handmade in Kerala · Pure natural ingredients · ZERO chemicals
+
