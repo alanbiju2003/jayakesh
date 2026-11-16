@@ -1,0 +1,84 @@
+{
+  "brand": "Jayakesh Kerala Hair Oil",
+  "alternateNames": [
+    "Jayakesh Hair Oil",
+    "Jayakesh",
+    "ജയകേശ് കേരള ഹെയർ ഓയിൽ",
+    "जयकेश केरला हेयर ऑयल",
+    "ஜெயகேஷ் கேரளா ஹேர் ஆயில்"
+  ],
+  "tagline": "Legacy in every drop",
+  "officialWebsite": "https://jayakesh.in/",
+  "origin": {
+    "state": "Kerala",
+    "country": "India",
+    "countryCode": "IN",
+    "regionCode": "IN-KL"
+  },
+  "founders": [
+    {
+      "name": "Ashmit Thomas",
+      "role": "Founder"
+    },
+    {
+      "name": "Jaya Shaji",
+      "role": "Co-Founder"
+    },
+    {
+      "name": "Ashmi Thomas",
+      "role": "Co-Founder"
+    }
+  ],
+  "contact": {
+    "phone": "+91 70110 83799",
+    "whatsapp": "https://wa.me/917011083799",
+    "email": "ashmitthomas2821@gmail.com",
+    "hours": "Mon-Sat 09:30-19:00 IST"
+  },
+  "product": {
+    "sku": "jk-200",
+    "name": "Jayakesh Kerala Hair Oil",
+    "volume": "200 ml",
+    "priceINR": 399,
+    "mrpINR": 499,
+    "currency": "INR",
+    "inStock": true,
+    "chemicalPolicy": "ZERO chemicals",
+    "preparation": "Handmade in small batches in Kerala, India",
+    "ingredients": [
+      "Coconut Oil",
+      "Onion (Red Onion)",
+      "Hibiscus",
+      "Kalonji (Black Seed)",
+      "Methi (Fenugreek Seeds)",
+      "Tulsi (Holy Basil)",
+      "Aloe Vera",
+      "Kali Mirch (Black Pepper)",
+      "Tea Leaves"
+    ],
+    "benefits": [
+      "Helps reduce hair fall",
+      "Promotes healthy hair growth",
+      "Nourishes the scalp",
+      "Strengthens hair"
+    ],
+    "shipping": {
+      "coverage": "Pan-India",
+      "standardFeeINR": 49,
+      "freeShippingThresholdINR": 499,
+      "codAvailable": true,
+      "codFeeINR": 0,
+      "upiAvailable": true
+    },
+    "coupons": [
+      {
+        "code": "WELCOME10",
+        "discount": "10% off on orders >= ₹299"
+      },
+      {
+        "code": "KERALA50",
+        "discount": "Flat ₹50 off on orders >= ₹699"
+      }
+    ]
+  }
+}

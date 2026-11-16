@@ -1,0 +1,42 @@
+# Jayakesh Kerala Hair Oil
+
+> Authentic handmade traditional hair oil from Kerala, India, crafted in small batches with 9 pure natural ingredients and ZERO chemicals. Tagline: "Legacy in every drop."
+
+Jayakesh (`https://jayakesh.in`) is an Indian direct-to-consumer hair-care brand rooted in Kerala's traditional handmade oil-making heritage. Every 200 ml bottle is prepared by hand from Coconut Oil, Onion (Red Onion), Hibiscus, Kalonji (Black Seed), Methi (Fenugreek Seeds), Tulsi (Holy Basil), Aloe Vera, Kali Mirch (Black Pepper), and Tea Leaves — with ZERO chemicals.
+
+## Quick Facts
+
+- **Official Store:** https://jayakesh.in/
+- **Flagship Product:** Jayakesh Kerala Hair Oil — 200 ml (`SKU: jk-200`)
+- **Selling Price:** ₹399 INR (MRP ₹499 INR — Save ₹100)
+- **Active Promo Codes:** `WELCOME10` (10% off on orders ≥ ₹299, up to ₹200 off) · `KERALA50` (Flat ₹50 off on orders ≥ ₹699)
+- **Origin:** Kerala, India
+- **Shipping:** Pan-India delivery across all serviceable PIN codes · ₹49 standard delivery · FREE shipping on orders ≥ ₹499 (2+ bottles ship free)
+- **Payment Methods:** Cash on Delivery (COD — ₹0 extra COD fee) & UPI / QR Pay (GPay, PhonePe, Paytm)
+- **Leadership:** Ashmit Thomas (Founder), Jaya Shaji (Co-Founder), Ashmi Thomas (Co-Founder)
+- **Customer Support:** WhatsApp / Phone `+91 70110 83799` · Email `ashmitthomas2821@gmail.com` (Mon–Sat, 9:30 AM – 7:00 PM IST)
+
+## 9 Pure Natural Ingredients
+
+1. **Coconut Oil** — Deeply nourishes and conditions hair, helping reduce protein loss, dryness, and breakage.
+2. **Onion (Red Onion)** — Rich in natural sulphur compounds and antioxidants that nourish follicles and invigorate the scalp.
+3. **Hibiscus** — Conditions strands, improves manageability, and supports lustrous hair in the Kerala tradition.
+4. **Kalonji (Black Seed)** — Delivers natural antioxidants and essential fatty acids for scalp and hair health.
+5. **Methi (Fenugreek Seeds)** — Conditions hair, boosts natural shine, and supports root strength.
+6. **Tulsi (Holy Basil)** — Natural purifying compounds and antioxidants help maintain a clean, balanced scalp.
+7. **Aloe Vera** — Moisturises hair lengths while soothing and hydrating the scalp.
+8. **Kali Mirch (Black Pepper)** — Plant phytochemicals and antioxidants traditionally used to warm and stimulate the scalp.
+9. **Tea Leaves** — Polyphenols, catechins, and natural caffeine help protect hair and scalp from oxidative stress.
+
+## Storefront & Crawlable Documentation Pages
+
+- [Official Storefront Home](https://jayakesh.in/): Interactive storefront, buy box (₹399), benefits, and customer reviews.
+- [Traditional Handmade Kerala Hair Oil Guide](https://jayakesh.in/kerala-hair-oil.html): Small-batch Kerala tradition, pure coconut base, and ZERO chemicals promise.
+- [9 Pure Natural Ingredients Encyclopedia](https://jayakesh.in/ingredients.html): Complete breakdown of Coconut Oil, Red Onion, Hibiscus, Kalonji, Methi, Tulsi, Aloe Vera, Kali Mirch, and Tea Leaves (with Malayalam, Hindi, Tamil & botanical names).
+- [How to Use & Scalp Massage Guide](https://jayakesh.in/benefits-how-to-use.html): Step-by-step application ritual, overnight vs pre-wash oiling, and weekly schedule by hair type.
+- [About Jayakesh & Founders](https://jayakesh.in/about-founders.html): Leadership profiles for Ashmit Thomas (Founder), Jaya Shaji (Co-Founder), and Ashmi Thomas (Co-Founder).
+- [30 Direct-Answer FAQ Hub](https://jayakesh.in/faq.html): Complete buyer Q&A covering ingredients, winter coconut solidification, coupons (`WELCOME10`, `KERALA50`), and replacements.
+- [Kerala Districts & Pan-India Delivery Guide](https://jayakesh.in/pan-india-delivery.html): Shipping timelines across all 14 Kerala districts and 45+ Indian cities, FREE ₹499+ shipping, COD & UPI.
+- [Google Merchant XML Shopping Feed](https://jayakesh.in/products-feed.xml): Structured product feed (`jk-200`, ₹399 INR, In Stock).
+- [Complete AI Knowledge Base (llms-full.txt)](https://jayakesh.in/llms-full.txt): Exhaustive reference for AI assistants and generative answer engines.
+
