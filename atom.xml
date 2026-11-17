@@ -3,6 +3,7 @@
   <title>Jayakesh Hair Oil — Official Knowledge Feed</title>
   <link href="https://jayakesh.in/"/>
   <link href="https://jayakesh.in/atom.xml" rel="self"/>
+  <link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
   <updated>2026-11-17T00:20:00+05:30</updated>
   <id>https://jayakesh.in/</id>
   <author><name>Jayakesh Kerala Hair Oil</name></author>
